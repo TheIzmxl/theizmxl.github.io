@@ -68,6 +68,11 @@ p {
     margin-top: 0;
     /* text-align: center; */
 }
+a {
+    text-decoration: none;
+    color: #053c78;
+    font-size: 1.9rem;
+}
 
 /* App */
 .header {
@@ -198,7 +203,9 @@ p {
 
     height: 30rem;
     width: auto;
-    margin-top: 3rem;
+    margin: 3rem 1rem 0 1rem;
+    border-radius: 15rem;
+    
 
 }
 
@@ -216,7 +223,15 @@ p {
     color: var(--negro);
     text-align: center;
 }
-
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+.nav-bloques {
+    display: flex;
+    align-items: center;
+}
 .divMensaje {
     min-width: 90%;
     min-height: 30rem;
