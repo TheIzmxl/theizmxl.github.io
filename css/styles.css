@@ -1,0 +1,286 @@
+/* Variables */
+:root {
+    --color-principal: #cfeae8;
+    --color-secundario: #E5E5E5;
+    --AzulOscuro: #053c78;
+    --AzulSecundario: #134e8d;
+    --blanco: #FFF;
+    --grisClaro: rgba(255, 247, 247, 0.87);
+    --negro: #000;
+    /* --robot:  #faf0f0; */
+    /* --robot:  #eaeff1; */
+    --robot:  #f3f4f5;
+
+    --fuentePrincipal: font-family: 'Ubuntu', sans-serif;
+    --delgada: 300;
+    --regular: 400;
+    --bold: 700;
+}
+
+/* Globales */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: var(--color-secundario);
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-weight: var(--bold);
+    font-size: 10rem;
+    color: var(--AzulOscuro);
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-weight: var(--regular);
+    font-size: 4rem;
+    text-align: center;
+}
+
+p {
+    font-weight: var(--delgada);
+    font-size: 2rem;
+    color: var(--AzulOscuro);
+    margin-top: 0;
+    /* text-align: center; */
+}
+
+/* App */
+.header {
+    margin-top: 2rem;
+}
+
+.app {
+    margin-top: 8rem;
+}
+
+@media (min-width: 760px) {
+    .app {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.app-encriptador {
+    margin-top: 5rem;
+
+}
+
+.textarea {
+    border: none;
+    background-color: var(--color-secundario);
+    font-size: 2rem;
+    height: 30rem;
+    width: 90%;
+    resize: none;
+
+}
+
+
+::placeholder {
+    color: var(--AzulOscuro);
+    text-transform: uppercase;
+    font-size: 2.9rem;
+    /* text-align: center; */
+}
+
+@media (min-width: 760px) {
+    .textarea {
+        height: 40rem;
+
+
+    }
+
+
+}
+
+.botones {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    font-family: var(--fuentePrincipal);
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: var(--bold);
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+.btn-encriptar {
+    background-color: var(--AzulOscuro);
+    color: var(--blanco);
+}
+
+.btn-desencriptar {
+    background-color: var(--color-secundario);
+    border: solid 2px var(--AzulOscuro);
+    color: var(--AzulOscuro);
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-encriptar:hover {
+    background-color: var(--AzulSecundario);
+    color: var(--blanco);
+    /* border: solid 2px var(--AzulOscuro); */
+}
+
+.btn-desencriptar:hover {
+    background-color: var(--AzulSecundario);
+    color: var(--blanco);
+}
+
+.app-encriptado {
+    min-width: 90%;
+    min-height: 30rem;
+    margin: 0 auto;
+    position: relative;
+    /* overflow: auto; */
+    word-wrap: break-word;
+    background-color: var(--robot);
+    border-radius: 5rem;
+    box-shadow: 0px 0px 5px 2px rgba(151, 151, 151, 0.7);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(151, 151, 151, 0.7);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(151, 151, 151, 0.7);
+
+}
+
+@media (min-width: 768px) {
+    .app-encriptado {
+        min-height: 60rem;
+        margin-top: -5rem;
+        border-radius: 4rem;
+    }
+
+}
+
+.no-texto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.icon {
+
+    height: 30rem;
+    width: auto;
+    margin-top: 3rem;
+
+}
+
+
+@media (min-width: 768px) {
+    .icon {
+        height: 20rem;
+        margin-top: 8rem;
+    }
+
+}
+
+.footer {
+    margin-top: 3rem;
+    color: var(--negro);
+    text-align: center;
+}
+
+.divMensaje {
+    min-width: 90%;
+    min-height: 30rem;
+    margin: 2rem 2rem;
+    display: block;
+}
+
+
+.divMensaje p {
+    word-wrap: anywhere;
+    display: inline-block;
+    text-align: inherit;
+    line-height: 2;
+    font-size: 2.2rem;
+    font-weight: var(--regular);
+    color: var(--AzulOscuro);
+
+}
+
+.alerta {
+    padding: .5rem;
+    width: 90%;
+    text-align: left;
+    color: var(--blanco);
+    display: block;
+    text-transform: inherit;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.error {
+    background-color: rgb(194, 0, 0);
+}
+
+.btn-copiar {
+    /* background-color: var(--blanco); */
+    color: #000;
+    position: absolute;
+    /* display: block; */
+    top: auto;
+    bottom: -2rem;
+    right: auto;
+    left: 18rem;
+    padding: 0;
+}
+
+
+
+@media (min-width: 760px) {
+    .btn-copiar {
+        left: 8rem;
+        bottom: 0rem;
+      
+    }
+}
+
+@media (min-width: 1200px) {
+    .btn-copiar {
+        left: 11rem;
+        bottom: 0rem;
+    }
+}
+.btn-copiar:hover {
+    background-color: var(--AzulSecundario);
+    color: var(--color-secundario);
+    
+}

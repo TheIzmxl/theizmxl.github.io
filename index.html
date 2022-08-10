@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Encripta2</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <h1>a</h1>
+        </header>
+
+        <div class="app">
+            <div class="app-encriptador">
+                <!-- <h2>Encripta Tu Mensaje</h2> -->
+                <textarea class="textarea" name="" id="mensaje" cols="20" rows="30" placeholder="Introduce un Texto" oninput="this.value = this.value.replace(/[^a-zA-Z0-9-  -]/,'')"></textarea>
+                <div class="ubiAlerta"></div>
+                <p class="condicion ">Solo minusculas y sin acentos</p>
+                <div class="botones">
+                    <button id="btnencriptar" class="btn btn-encriptar"> Encriptar</button>
+                    <button id="btndesencriptar" class="btn btn-desencriptar"> Desencriptar</button>
+                </div>
+            </div>
+
+            <div class="app-encriptado">
+
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class=" icon-tabler icon-tabler-satellite" width="52"
+                        height="52" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M3.707 6.293l2.586 -2.586a1 1 0 0 1 1.414 0l5.586 5.586a1 1 0 0 1 0 1.414l-2.586 2.586a1 1 0 0 1 -1.414 0l-5.586 -5.586a1 1 0 0 1 0 -1.414z" />
+                        <path d="M6 10l-3 3l3 3l3 -3" />
+                        <path d="M10 6l3 -3l3 3l-3 3" />
+                        <line x1="12" y1="12" x2="13.5" y2="13.5" />
+                        <path d="M14.5 17a2.5 2.5 0 0 0 2.5 -2.5" />
+                        <path d="M15 21a6 6 0 0 0 6 -6" />
+                    </svg> -->
+                
+                    
+            </div>
+            
+        </div>       
+    </div>
+    <footer class="footer">
+        <p>Código Encriptado. Ismael Barreto Todos los Derechos Reservados</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
